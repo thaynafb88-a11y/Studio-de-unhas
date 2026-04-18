@@ -1,0 +1,188 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio de Unhas</title>
+
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Menu */
+nav {
+    background: #ff85c1;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Serviços */
+.servicos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* WhatsApp fixo */
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+    background: #ff1493;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+<script>
+// Boas-vindas
+window.onload = function () {
+    console.log("Site carregado com sucesso 💅");
+}
+
+// Seleção de serviço
+function selecionarServico(servico) {
+    alert("Você escolheu: " + servico);
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Studio de Unhas 💅</h1>
+    <p>Beleza e cuidado para suas mãos</p>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bem-vinda!</h2>
+    <p>Realce sua beleza com unhas incríveis e atendimento profissional.</p>
+    <a href="https://wa.me/qr/RAXL2NFIIFSDB1" target="_blank" class="btn">
+        Agendar pelo WhatsApp
+    </a>
+</section>
+
+<section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+        
+        <div class="card" onclick="selecionarServico('Manicure')">
+            <h3>Manicure</h3>
+            <p>Cuidados completos para suas unhas.</p>
+        </div>
+
+        <div class="card" onclick="selecionarServico('Pedicure')">
+            <h3>Pedicure</h3>
+            <p>Conforto e beleza para seus pés.</p>
+        </div>
+
+        <div class="card" onclick="selecionarServico('Alongamento')">
+            <h3>Alongamento</h3>
+            <p>Unhas longas e elegantes.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Clique abaixo para falar diretamente no WhatsApp</p>
+    
+    <a href="https://wa.me/qr/RAXL2NFIIFSDB1" target="_blank" class="btn">
+        Falar no WhatsApp 💬
+    </a>
+</section>
+
+<!-- Botão flutuante -->
+<a href="https://wa.me/qr/RAXL2NFIIFSDB1" target="_blank" class="whatsapp-fixo">
+💬
+</a>
+
+<footer>
+    <p>© 2026 Studio de Unhas | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
